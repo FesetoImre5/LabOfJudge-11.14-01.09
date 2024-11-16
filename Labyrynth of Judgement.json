@@ -109,6 +109,15 @@
         "name": "NewSprite2",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LabirinthCross2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LabirinthCross2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1181,14 +1190,29 @@
         },
         {
           "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "MainScreen",
+          "persistentUuid": "90ba50e2-2470-4b2e-9ac0-a6afacbc1d6d",
+          "width": 0,
+          "x": 415,
+          "y": 0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 1080,
           "layer": "",
           "name": "BORDER",
-          "persistentUuid": "55905c52-7b6e-4196-ae3d-faa746eac734",
-          "width": 1080,
-          "x": 415,
+          "persistentUuid": "f266c01d-0d35-489a-8b6c-c8f84e9745ea",
+          "width": 1920,
+          "x": 0,
           "y": 0,
           "zOrder": 0,
           "numberProperties": [],
@@ -1335,14 +1359,14 @@
           "effects": [],
           "behaviors": [
             {
-              "bottomEdgeAnchor": 2,
-              "leftEdgeAnchor": 0,
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
               "name": "Anchor",
-              "relativeToOriginalWindowSize": true,
-              "rightEdgeAnchor": 0,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
               "type": "AnchorBehavior::AnchorBehavior",
-              "useLegacyBottomAndRightAnchors": false,
-              "topEdgeAnchor": 1
+              "useLegacyBottomAndRightAnchors": true,
+              "relativeToOriginalWindowSize": true
             }
           ],
           "animations": [
@@ -1416,13 +1440,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             },
             {
@@ -1459,6 +1483,77 @@
             "characterSize": 75,
             "color": "255;255;255"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "MainScreen",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LabirinthCross2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1080,
+                            "y": 0
+                          },
+                          {
+                            "x": 1080,
+                            "y": 1080
+                          },
+                          {
+                            "x": 0,
+                            "y": 1080
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1469,6 +1564,9 @@
           },
           {
             "objectName": "BORDER"
+          },
+          {
+            "objectName": "MainScreen"
           },
           {
             "objectName": "Placeholder1"
@@ -1518,7 +1616,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "3"
+                    "1"
                   ]
                 },
                 {
@@ -1580,7 +1678,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "OptionsEvents",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1847,7 +1944,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Names",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1876,7 +1972,7 @@
                         "CHOOSETEXT",
                         "Text",
                         "=",
-                        "\"Start Game\""
+                        "\"Játék indítása\""
                       ]
                     }
                   ]
@@ -1934,7 +2030,7 @@
                         "CHOOSETEXT",
                         "Text",
                         "=",
-                        "\"Settings\""
+                        "\"Beállítások\""
                       ]
                     }
                   ]
@@ -1963,7 +2059,7 @@
                         "CHOOSETEXT",
                         "Text",
                         "=",
-                        "\"Quit\""
+                        "\"Kilépés\""
                       ]
                     }
                   ]
@@ -1976,6 +2072,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Constant Positioning",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2014,6 +2111,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Click-events",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2215,20 +2313,65 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "BackgroundEvents",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "BORDER",
-                "=",
-                "TITLETEXT.X()-80"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "MainScreen",
+                    "=",
+                    "TITLETEXT.X()-80"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MainScreen",
+                    "Opacity",
+                    "=",
+                    "125"
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
         }
       ],
       "layers": [
