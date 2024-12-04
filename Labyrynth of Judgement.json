@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 218,
+    "build": 217,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -60609,6 +60609,2426 @@
                     }
                   ],
                   "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 125",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_125"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText",
+                                "((Choicebackground.Width()-900)/4)*2+300+Choicebackground.X()",
+                                "Choicebackground.Y()+20",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::WrappingWidth"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "=",
+                                "300"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetWrapping"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetTextAlignment"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "\"center\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "CardText",
+                                "Text",
+                                "=",
+                                "Card_142"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AjoutObjConcern"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "1080",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 126",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_126"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Egyenes\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+600+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Jobb\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Egyenes\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_118"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Jobb\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_155"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 127",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_127"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Köpeny\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+600+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Nincs\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Köpeny\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_23"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Nincs\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_62"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 128",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_128"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Szerencse\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+600+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Szerencsétlen\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Szerencse\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_48"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Szerencsétlen\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_93"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 129",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_129"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Észak\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+600+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Kelet\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Észak\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_66"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Kelet\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_112"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 130",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_130"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText",
+                                "((Choicebackground.Width()-900)/4)*2+300+Choicebackground.X()",
+                                "Choicebackground.Y()+20",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::WrappingWidth"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "=",
+                                "300"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetWrapping"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetTextAlignment"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "\"center\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "CardText",
+                                "Text",
+                                "=",
+                                "Card_80"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AjoutObjConcern"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "1080",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
                 }
               ],
               "parameters": []
@@ -60622,6 +63042,2136 @@
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 131",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_131"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText",
+                                "((Choicebackground.Width()-900)/4)*2+300+Choicebackground.X()",
+                                "Choicebackground.Y()+20",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::WrappingWidth"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "=",
+                                "300"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetWrapping"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetTextAlignment"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "\"center\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "CardText",
+                                "Text",
+                                "=",
+                                "Card_26"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AjoutObjConcern"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "1080",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 132",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_132"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText",
+                                "((Choicebackground.Width()-900)/4)*2+300+Choicebackground.X()",
+                                "Choicebackground.Y()+20",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::WrappingWidth"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "=",
+                                "300"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetWrapping"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetTextAlignment"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "\"center\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Title Screen\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AjoutObjConcern"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "1080",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 133",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_133"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText",
+                                "((Choicebackground.Width()-900)/4)*2+300+Choicebackground.X()",
+                                "Choicebackground.Y()+20",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::WrappingWidth"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "=",
+                                "300"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetWrapping"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetTextAlignment"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "\"center\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Title Screen\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AjoutObjConcern"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "1080",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 134",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_134"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText",
+                                "((Choicebackground.Width()-900)/4)*2+300+Choicebackground.X()",
+                                "Choicebackground.Y()+20",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::WrappingWidth"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "=",
+                                "300"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetWrapping"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetTextAlignment"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "\"center\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "CardText",
+                                "Text",
+                                "=",
+                                "Card_154"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AjoutObjConcern"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "1080",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 135",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_135"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText",
+                                "((Choicebackground.Width()-900)/4)*2+300+Choicebackground.X()",
+                                "Choicebackground.Y()+20",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::WrappingWidth"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "=",
+                                "300"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetWrapping"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetTextAlignment"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "\"center\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Title Screen\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AjoutObjConcern"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "1080",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Card 136",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_136"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText",
+                                "((Choicebackground.Width()-900)/4)*2+300+Choicebackground.X()",
+                                "Choicebackground.Y()+20",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::WrappingWidth"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "=",
+                                "300"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetWrapping"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextObject::SetTextAlignment"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "\"center\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::Value"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                "Text",
+                                "=",
+                                "\"Tovább\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MouseButtonPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "CardText",
+                                "Text",
+                                "=",
+                                "Card_172"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AjoutObjConcern"
+                              },
+                              "parameters": [
+                                "",
+                                "ChoiceText"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "ChoiceText",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "1080",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Down\"",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Card 137",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::Value"
+                          },
+                          "parameters": [
+                            "CardText",
+                            "Text",
+                            "=",
+                            "Card_137"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Choicetimer\"",
+                                ">=",
+                                "1.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "980",
+                                "\"easeFromTo\"",
+                                "1",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::StopTween"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Nyertem\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText",
+                                    "((Choicebackground.Width()-900)/4)*2+600+Choicebackground.X()",
+                                    "Choicebackground.Y()+20",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Vesztettem\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::WrappingWidth"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "=",
+                                    "300"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetWrapping"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextObject::SetTextAlignment"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "\"center\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Tween::HasFinished"
+                              },
+                              "parameters": [
+                                "Choicebackground",
+                                "Tween",
+                                "\"Up\""
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Nyertem\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "Card_160"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SourisSurObjet"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    "Text",
+                                    "=",
+                                    "\"Vesztettem\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "MouseButtonPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Left"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "CardText",
+                                    "Text",
+                                    "=",
+                                    "\"A játékot sajnos elvesztetted.\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "ChoiceText"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "ChoiceText",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "1080",
+                                    "\"easeFromTo\"",
+                                    "1",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::StopTween"
+                                  },
+                                  "parameters": [
+                                    "Choicebackground",
+                                    "Tween",
+                                    "\"Down\"",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
                 {
                   "colorB": 228,
                   "colorG": 176,
