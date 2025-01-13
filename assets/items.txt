@@ -1,14 +1,15 @@
-Arany kulcs 
-kötél
+Arany kulcs ✓
+kötél ✓
+bornz kulcs ✓
+piros könyv ✓
+kék könyv ✓
+zöld könyv ✓
+
 lebegés köpenye
 gyűrű
 üveg flaska folyadékkal benne 
-bornz kulcs 
 arany szobor 
 értékes kő 
-piros könyv 
-kék könyv 
-zöld könyv 
 szerencsehozó növény (nem láthatóan) 
 arany tallér 
 pergament számkóddal 15 10 22
