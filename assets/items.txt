@@ -5,19 +5,22 @@ piros könyv ✓
 kék könyv ✓
 zöld könyv ✓
 
-lebegés köpenye
-gyűrű
-üveg flaska folyadékkal benne 
-arany szobor 
-értékes kő 
-szerencsehozó növény (nem láthatóan) 
-arany tallér 
-pergament számkóddal 15 10 22
-üveg flaska áttetsző folyadékkal benne 
-üveg flaska aranyfolyadékkal benne 
-üveg flaska faközöld folyadékkal benne 
-rubin
-gyémánt 
-arany karmok
+üveg flaska folyadékkal benne ✓
+üveg flaska áttetsző folyadékkal benne ✓
+üveg flaska aranyfolyadékkal benne ✓
+üveg flaska faközöld folyadékkal benne ✓
+
+rubin ✓
+gyémánt ✓
+értékes kő ✓
+
+arany tallér ✓
+arany karmok ✓
+
+lebegés köpenye ✓
+gyűrű ✓
+arany szobor ✓
+szerencsehozó növény (nem láthatóan) ✓
+pergament számkóddal 15 10 22 ✓
 tükörképe a játékosnak 
 
